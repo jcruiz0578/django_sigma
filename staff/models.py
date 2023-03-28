@@ -6,7 +6,7 @@ from django.db import models
 class Personal(models.Model):
     identification_card = models.IntegerField(primary_key=True)
     first_name = models.CharField(max_length=150, blank=False)
-    last_name = models.
+    last_name = models.CharField(max_length=150, blank=False)
     fn = models.DateField(blank=False)
     SEXO = (
         ('N/A', 'N/A'),
